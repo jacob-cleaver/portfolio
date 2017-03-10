@@ -19,13 +19,57 @@ body, html {
     min-height: 80%;
 }
 
-.img-2 {
-    background-image: url("public/images/mac.jpg");
-    min-height: 400px;
+.projects-div {
+    color: #ddd;
+    background-color: #282E34;
+    text-align: center;
+    text-align: justify;
+}
+
+.projects {
+  position: relative;
+  height: 250px;
+  width: auto;
+}
+
+.projects img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    vertical-align: middle;
+    height: 70px;
+    width: auto;
+    -webkit-transition: all .75s ease-out;
+    -moz-transition: all .75s ease-out;
+    -o-transition: all .75s ease-out;
+    -ms-transition: all .75s ease-out;
+    transition: all .75s ease-out;
+}
+
+.projects img:hover {
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: all .75s ease;
+    -moz-transition: all .75s ease;
+    -o-transition: all .75s ease;
+    -ms-transition: all .75s ease;
+    transition: all .75s ease;
+}
+
+.skills {
+    background-color: #000;
+    font-size: 25px;
+    color: #f7f7f7;
+    min-height: 500px;
 }
 
 .img-3 {
-    background-image: url("public/images/mac2.jpg");
+    /*background-image: url("public/images/mac2.jpg");*/
+    background-color: #eee;
     min-height: 400px;
 }
 
@@ -66,14 +110,6 @@ h3 {
 .about {
     color: #777;
     background-color: #fff;
-    text-align: center;
-    padding: 50px 80px;
-    text-align: justify;
-}
-
-.projects {
-    color: #ddd;
-    background-color: #282E34;
     text-align: center;
     padding: 50px 80px;
     text-align: justify;
