@@ -6,16 +6,38 @@ body, html {
     color: #777;
 }
 
-nav .logo {
+nav {
+    z-index: 2;
+    height: 80px;
+}
+
+.logo {
     background: #f5cd11;
     color: #fff;
     min-height: 80px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
+    height: 100px;
 }
 
 @media (min-width: 992px) {
+    nav ul {
+        list-style: none;
+        display: inline-flex;
+    }
+    nav ul li a {
+        color: #f5cd11;
+        padding: 20px;
+    }
+    nav a {
+        text-align: center;
+        padding: 5px;
+        font-size: 10px;
+    }
+    nav a:hover {
+        color: #fff;
+        text-decoration: none;
     }
     nav .social {
         display: inline-block;
@@ -42,24 +64,35 @@ nav .logo {
         -ms-transition: background .5s ease;
         transition: background .5s ease;
     }
+    .affix {
+        top: 0;
+        width: 100%;
+        background: #555;
+        -webkit-transition: background-color 1s ease;
+        -moz-transition: background-color 1s ease;
+        -o-transition: background-color 1s ease;
+        transition: background-color 1s ease;
+    }
+    .affix-top {
+      -webkit-transition: background-color 1s ease-out;
+      -moz-transition: background-color 1s ease-out;
+      -o-transition: background-color 1s ease-out;
+      transition: background-color 1s ease-out;
+    }
+    .affix+.container-fluid {
+        padding-top: 70px;
+    }
 }
 
-nav a {
-    text-align: center;
-    padding: 5px;
-    font-size: 10px;
-}
-
-nav a:hover {
-  color: #fff;
-  text-decoration: none;
+.navbar {
+  border-radius: 0;
 }
 
 .img-1 {
     background-image: url("public/images/me.jpg");
     min-height: 80%;
-    margin-top: -120px;
     z-index: -1;
+    margin-top: -120px;
     position: relative;
     opacity: 0.9;
     background-attachment: fixed;
