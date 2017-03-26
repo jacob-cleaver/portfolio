@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
 body, html {
     height: 100%;
     margin: 0;
@@ -7,7 +7,7 @@ body, html {
 }
 
 nav {
-    z-index: 2;
+    z-index: 1;
     height: 80px;
 }
 
@@ -19,6 +19,7 @@ nav {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
     height: 100px;
+    border-radius: 2px;
 }
 
 @media (min-width: 992px) {
@@ -26,19 +27,20 @@ nav {
         list-style: none;
         display: inline-flex;
     }
-    nav ul li a {
+    nav li a {
         color: #f5cd11;
         padding: 20px;
-    }
-    nav a {
         text-align: center;
         padding: 5px;
-        font-size: 10px;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        padding: 20px;
     }
-    nav a:hover {
+    nav li a:hover {
         color: #fff;
         text-decoration: none;
-    }
+      }
     nav .social {
         display: inline-block;
         color: #fff;
@@ -50,23 +52,23 @@ nav {
         text-align: center;
         padding: 5px;
         font-size: 10px;
-        -webkit-transition: background .3s ease-out;
-        -moz-transition: background .3s ease-out;
-        -o-transition: background .3s ease-out;
-        -ms-transition: background .3s ease-out;
-        transition: background .3s ease-out;
+        -webkit-transition: background .5s ease-out;
+        -moz-transition: background .5s ease-out;
+        -o-transition: background .5s ease-out;
+        -ms-transition: background .5s ease-out;
+        transition: background .5s ease-out;
     }
     nav .social:hover {
         background: #f5cd11;
-        -webkit-transition: background .3s ease;
-        -moz-transition: background .3s ease;
-        -o-transition: background .3s ease;
-        -ms-transition: background .3s ease;
-        transition: background .3s ease;
+        -webkit-transition: background .5s ease;
+        -moz-transition: background .5s ease;
+        -o-transition: background .5s ease;
+        -ms-transition: background .5s ease;
+        transition: background .5s ease;
     }
     .affix {
         top: 0;
-        background: #555;
+        background: #656d83;
         -webkit-transition: background-color 1s ease;
         -moz-transition: background-color 1s ease;
         -o-transition: background-color 1s ease;
@@ -188,4 +190,70 @@ h3 {
     text-align: center;
     padding: 50px 80px;
     text-align: justify;
+}
+
+footer {
+  background: #656d83;
+  min-height: 300px;
+  text-align: center;
+  padding: 50px;
+}
+
+footer nav ul {
+  list-style: none;
+}
+
+footer nav li a {
+  color: #fff;
+}
+
+footer nav li a:hover {
+  color: #f5cd11;
+  text-decoration: none;
+
+}
+
+footer .social {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #f5cd11;
+    color: #f5cd11;
+    border-radius: 50%;
+    min-width: 40px;
+    min-height: 40px;
+    margin: 3px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+footer .social:hover {
+    background: #f5cd11;
+    color: #fff;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.email {
+  color: #f5cd11;
+  font-size: 20px;
+  text-align: center;
+}
+
+.email:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer p {
+  color: #282e34;
 }
