@@ -243,15 +243,9 @@ footer .social:hover {
     transition: all .5s ease;
 }
 
-.email {
-  color: #f5cd11;
-  font-size: 20px;
-  text-align: center;
-}
-
-.email:hover {
-  color: #fff;
-  text-decoration: none;
+.hire-me {
+  border: 2px solid #f5cd11;
+  border-radius: 2px;
 }
 
 footer p {
